@@ -1,16 +1,14 @@
-import { connect } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.scss';
 import Error from './components/common/Error/Error';
 import Header from './components/Header/Header';
 import AboutFilm from './components/Movies/AboutFilm/AboutFilm';
-
 import MoviesContainer from './components/Movies/MoviesContainer';
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className='App'>
         <Header />
         <Route path='/' exact render={() => <MoviesContainer />} />
