@@ -1,5 +1,3 @@
-
-
 export const FETCHED_MOVIES = 'FETCHED_MOVIES';
 export const FETCHED_FILM_INFO = 'FETCHED_FILM_INFO';
 const SET_SEARCH_VALUE = 'SET_SEARCH_VALUE';
@@ -18,7 +16,6 @@ const initialState = {
     isFetching: false,
     sortBy: '',
     isFetchError: false
-
 };
 
 export function reducer(state = initialState, action) {
