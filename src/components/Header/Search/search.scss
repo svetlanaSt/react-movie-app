@@ -1,0 +1,43 @@
+@import "../../../base.scss";
+
+@mixin searchAdaptive() {
+  width: 300px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  margin-left: 7%;
+  input {
+    margin-bottom: 10px;
+  }
+}
+
+.search {
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: $shadow;
+  margin-top: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  input {
+    outline: 0;
+    outline-offset: 0;
+    width: 100px;
+    height: 3px;
+    padding: 10px;
+    border: solid 1px transparent;
+    margin-right: 10px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    @include searchAdaptive();
+  }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    @include searchAdaptive();
+    margin-left: 25%;
+  }
+}

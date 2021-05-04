@@ -1,0 +1,14 @@
+$second-color: #9da3ff;
+$th-color: #cacdff;
+$bcg-color:  rgb(120, 112, 155);
+$shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+@mixin zero-btn {
+  border: none;
+  outline: none;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

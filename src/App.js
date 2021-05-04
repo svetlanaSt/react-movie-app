@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { connect } from 'react-redux';
+import { BrowserRouter, Route } from 'react-router-dom';
+import './App.scss';
+import Error from './components/common/Error/Error';
+import Header from './components/Header/Header';
+import AboutFilm from './components/Movies/AboutFilm/AboutFilm';
+
+import MoviesContainer from './components/Movies/MoviesContainer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Header />
+        <Route path='/' exact render={() => <MoviesContainer />} />
+        <Route path='/about/:id' render={() => <AboutFilm />} />
+        <Route path='/error' render={() => <Error />} />
+      </div>
+    </BrowserRouter>
   );
 }
 

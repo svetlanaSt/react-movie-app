@@ -1,0 +1,9 @@
+@import "index.scss";
+
+.App {
+  text-align: center;
+  background-color: $bcg-color;
+  position: absolute;
+  min-width: 100%;
+  height: 100%; 
+}
