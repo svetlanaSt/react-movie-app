@@ -6,6 +6,6 @@ const Preloader = () => {
             <img src={loader} />
         </>
     );
-}
+};
 
 export default Preloader;

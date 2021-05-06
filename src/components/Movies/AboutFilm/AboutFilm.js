@@ -30,7 +30,7 @@ const mapStateToProps = function (state) {
     return {
         filmInfo: state.filmInfo
     };
-}
+};
 
 
 export default connect(mapStateToProps, {fetchedFilmInfo})(AboutFilm);

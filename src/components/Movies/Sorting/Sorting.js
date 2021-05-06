@@ -6,7 +6,7 @@ function Sorting(props) {
 
     const sortBy = (current) => {        
         props.setSortName(current);       
-    }
+    };
 
     return (
         <div className='sort'>

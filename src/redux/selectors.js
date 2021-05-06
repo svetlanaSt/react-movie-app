@@ -3,7 +3,7 @@ const getMovies = (allMovies, searchValue) => {
         return allMovies;
     }
     return allMovies.filter(film => film.title.toLowerCase().includes(searchValue));
-}
+};
 
 const getSortMovies = (allMovies, sortBy) => {
     switch (sortBy) {
@@ -18,28 +18,28 @@ const getSortMovies = (allMovies, sortBy) => {
         default:
             return allMovies;
     }
-}
+};
 
 export const getPageNumber = (currentPage) => {
     return currentPage;
-}
+};
 
 export const getIsFetching = (isFetching) => {
     return isFetching;
-}
+};
 
 export const getIsError = (isFetchError) => {
     return isFetchError;
-}
+};
 
 export const getSortBy = (sortBy) => {
     return sortBy;
-}
+};
 
 export const getFilterMovies = (allMovies, searchValue, sortBy) => {
     return getSortMovies(getMovies(allMovies, searchValue), sortBy);
-}
+};
 
 export const getSearchValue = (searchValue) => {
     return  searchValue;
-}
+};

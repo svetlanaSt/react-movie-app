@@ -64,46 +64,46 @@ export function reducer(state = initialState, action) {
 export const setMovies = (payload) => ({
     type: SET_MOVIES,
     payload
-})
+});
 
 export const fetchedMovies = (payload) => ({
     type: FETCHED_MOVIES,
     payload
-})
+});
 
 export const fetchedFilmInfo = (payload) => ({
     type: FETCHED_FILM_INFO,
     payload
-})
+});
 
 export const setSearchValue = (payload) => ({
     type: SET_SEARCH_VALUE,
     payload
-})
+});
 
 export const setCurrentPage = (payload) => ({
     type: SET_CURRENT_PAGE,
     payload
-})
+});
 
 export const setFilmInfo = (payload) => ({
     type: SET_FILM_INFO,
     payload
-})
+});
 
 export const setSortName = (payload) => ({
     type: SET_SORT_NAME,
     payload
-})
+});
 
 export const toggleFetching = (isFetching) => ({
     type: TOGGLE_FETCHING,
     isFetching
-})
+});
 
 export const setError = (isFetchError) => ({
     type: SET_FETCH_ERROR,
     isFetchError
-})
+});
 
 

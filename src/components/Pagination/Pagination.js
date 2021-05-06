@@ -44,7 +44,7 @@ const mapStateToProps = function ({currentPage}) {
     return {
         currentPage: getPageNumber(currentPage)
     };
-}
+};
 
 
 export default connect(mapStateToProps, { setCurrentPage })(Pagination);

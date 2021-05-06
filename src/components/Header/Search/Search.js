@@ -23,6 +23,6 @@ const mapStateToProps = function ({searchValue}) {
     return {
         searchInputValue: getSearchValue(searchValue)
     };
-}
+};
 
 export default connect(mapStateToProps, { setSearchValue })(Search);

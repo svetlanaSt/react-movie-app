@@ -37,6 +37,6 @@ const mapStateToProps = function ({ allMovies, searchValue, sortBy, currentPage,
         sortBy: getSortBy(sortBy),
         isError: getIsError(isFetchError)
     };
-}
+};
 
 export default connect(mapStateToProps, {  fetchedMovies })(MoviesContainer);
