@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className='header'>
             <NavLink to='/'>
-                <h3>Show popular movies</h3>
+                <h3>Movie App</h3>
             </NavLink>
             <Search />
         </div>
