@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router';
-import { fetchedFilmInfo } from '../../../redux/reducer';
+import { fetchedFilmInfo } from '../../../redux/reducers/reducer';
 import './aboutFilm.scss';
 
 function AboutFilm(props) {

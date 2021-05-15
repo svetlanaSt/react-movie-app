@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { setSortName } from '../../../redux/reducer';
+import { setSortName } from '../../../redux/reducers/reducer';
 import './sorting.scss';
 
 function Sorting(props) {

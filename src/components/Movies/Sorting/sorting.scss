@@ -1,22 +1,21 @@
 @import "../../../base.scss";
 
 .sort {
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 20px;
-    margin-left: -30px;
-    button {
-        @include zero-btn;
-        background-color: $second-color;
-        border-radius: 10px;       
-        width: 100px;
-        height: 40px;
-       margin: 0;
-    }
-    @media only screen and (min-width: 320px) and (max-width: 480px) {
-        margin-left: 1%;
-       }
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  margin-left: -30px;
+  button {
+    @include zero-btn;
+    background-color: $second-color;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin: 0;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin-left: 1%;
+  }
 }
-

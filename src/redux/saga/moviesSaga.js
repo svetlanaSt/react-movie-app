@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 import { getPopularMovies } from "../../api/api";
-import { setMovies, FETCHED_MOVIES, toggleFetching, setError } from "../reducer"
+import { setMovies, FETCHED_MOVIES, toggleFetching, setError } from "../reducers/reducer"
 
 export function* allMoviesWorker(action) {
     try {

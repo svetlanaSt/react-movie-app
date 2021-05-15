@@ -8,7 +8,12 @@ function Header() {
             <NavLink to='/'>
                 <h3>Movie App</h3>
             </NavLink>
-            <Search />
+            <div className='saved'>
+                <NavLink to='/saved'>
+                    <h3>Saved Movies</h3>
+                </NavLink>
+                <Search />
+            </div>
         </div>
     );
 }

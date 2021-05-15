@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router';
-import {  fetchedMovies } from '../../redux/reducer';
+import {  fetchedMovies } from '../../redux/reducers/reducer';
 import { getFilterMovies, getIsError, getIsFetching, getPageNumber, getSortBy, getSortMovies } from '../../redux/selectors';
 import Preloader from '../common/Preloader';
 import Movies from './Movies';
@@ -10,8 +10,7 @@ import './movies.scss';
 
 function MoviesContainer(props) {
 
-    useEffect(() => {
-        console.log(props.pageNumber);
+    useEffect(() => {      
         props.fetchedMovies( props.pageNumber);
     }, [props.sortBy, props.pageNumber]);
 

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { setSearchValue } from '../../../redux/reducer';
+import { setSearchValue } from '../../../redux/reducers/reducer';
 import './search.scss';
 import searchIcon from './../../../assets/images/searchIcon.png';
 import { getSearchValue } from '../../../redux/selectors';

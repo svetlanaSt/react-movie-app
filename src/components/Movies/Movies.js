@@ -1,16 +1,19 @@
+import { useEffect } from 'react';
 import Pagination from '../Pagination/Pagination';
 import MovieCard from './MovieCard/MovieCard';
 import './movies.scss';
 import Sorting from './Sorting/Sorting';
 
 function Movies(props) {
+   
+    const {movies} = props;
+
     return (
         <>
             <Sorting />
             <div className='movies'>
-                {props.movies
-                    .map((film) => <MovieCard key={film.id} title={film.title}
-                        poster={film.poster_path} rating={film.vote_average} id={film.id} />)}
+                {movies
+                    .map((film, i) => <MovieCard key={i} {...film} />)}
             </div>
             <Pagination />
         </>

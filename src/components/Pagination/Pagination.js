@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { connect } from 'react-redux';
-import { setCurrentPage } from '../../redux/reducer';
+import { setCurrentPage } from '../../redux/reducers/reducer';
 import { getPageNumber } from '../../redux/selectors';
 import './pagination.scss';
 
